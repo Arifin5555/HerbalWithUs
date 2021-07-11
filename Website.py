@@ -123,7 +123,7 @@ def upload_file():
 			return redirect(request.url)
 		# If it doesn`t look like an image file
 		if not allowed_file(file.filename):
-			flash('I only accept files of type'+str(ALLOWED_EXTENSIONS))
+			flash('This page is accept files of type'+str(ALLOWED_EXTENSIONS))
 			return redirect(request.url)
 		#when the user uploads a file with good parameters
 		if file and allowed_file(file.filename):
